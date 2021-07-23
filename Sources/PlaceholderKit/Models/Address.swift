@@ -8,11 +8,11 @@
 import Foundation
 
 public struct Address: Codable, Equatable, Hashable {
-    public let street: String
-    public let suite: String
-    public let city: String
-    public let zipcode: String
-    public let geo: Geo
+    public var street: String
+    public var suite: String
+    public var city: String
+    public var zipcode: String
+    public var geo: Geo
 
     public init(street: String, suite: String, city: String, zipcode: String, geo: Geo) {
         self.street = street
@@ -27,8 +27,8 @@ extension Address {
 
     // swiftlint:disable:next type_name
     public struct Geo: Codable, Equatable, Hashable {
-        public let lat: String
-        public let lng: String
+        public var lat: String
+        public var lng: String
 
         public init(lat: String, lng: String) {
             self.lat = lat

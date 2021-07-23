@@ -7,15 +7,15 @@
 
 import Foundation
 
-public struct User: Codable, Equatable, Hashable {
+public struct User: Codable, Identifiable, Equatable, Hashable {
     public let id: Int
-    public let name: String
-    public let username: String
-    public let email: String
-    public let address: Address?
-    public let phone: String?
-    public let website: String?
-    public let company: Company?
+    public var name: String
+    public var username: String
+    public var email: String
+    public var address: Address?
+    public var phone: String?
+    public var website: String?
+    public var company: Company?
 
     public init(
         id: Int,
