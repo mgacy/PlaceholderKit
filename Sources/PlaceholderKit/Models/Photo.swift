@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct Photo: Codable, Equatable, Hashable {
+public struct Photo: Codable, Identifiable, Equatable, Hashable {
     public let id: Int
-    public let albumId: Int
-    public let title: String
-    public let url: URL
-    public let thumbnailUrl: URL
+    public var albumId: Int
+    public var title: String
+    public var url: URL
+    public var thumbnailUrl: URL
 
     public init(id: Int, albumId: Int, title: String, url: URL, thumbnailUrl: URL) {
         self.id = id
