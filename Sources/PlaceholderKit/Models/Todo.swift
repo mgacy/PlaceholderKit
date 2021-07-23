@@ -7,11 +7,11 @@
 
 import Foundation
 
-public struct Todo: Codable, Equatable, Hashable {
+public struct Todo: Codable, Identifiable, Equatable, Hashable {
     public let id: Int
-    public let userId: Int
-    public let title: String
-    public let completed: Bool
+    public var userId: Int
+    public var title: String
+    public var completed: Bool
 
     public init(id: Int, userId: Int, title: String, completed: Bool) {
         self.id = id

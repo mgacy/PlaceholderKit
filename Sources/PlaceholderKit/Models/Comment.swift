@@ -7,12 +7,12 @@
 
 import Foundation
 
-public struct Comment: Codable, Equatable, Hashable {
+public struct Comment: Codable, Identifiable, Equatable, Hashable {
     public let id: Int
-    public let postId: Int
-    public let name: String
-    public let email: String
-    public let body: String
+    public var postId: Int
+    public var name: String
+    public var email: String
+    public var body: String
 
     public init(id: Int, postId: Int, name: String, email: String, body: String) {
         self.id = id

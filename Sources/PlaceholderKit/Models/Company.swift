@@ -8,9 +8,9 @@
 import Foundation
 
 public struct Company: Codable, Equatable, Hashable {
-    public let name: String
-    public let catchPhrase: String
-    public let bs: String
+    public var name: String
+    public var catchPhrase: String
+    public var bs: String
 
     public init(name: String, catchPhrase: String, bs: String) {
         self.name = name
