@@ -186,6 +186,7 @@ public enum JSONPlaceholder {
                 }
             }
         }
+    }
 
     // MARK: - Photo
 
